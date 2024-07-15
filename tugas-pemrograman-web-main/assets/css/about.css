@@ -1,0 +1,290 @@
+/* Nunito Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+/* Top Nabar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #00c2cb;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.top-navbar-logo {
+  width: 235px;
+  height: 47px;
+  margin-left: 64px;
+}
+
+.top-navbar-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 64px;
+}
+
+.top-navbar-link-container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.top-navbar-link-container a.link-active {
+  font-weight: 700;
+  border-bottom: #fff 1px solid;
+}
+
+.top-navbar-link-container a:hover {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+}
+
+/* About container */
+.content-container {
+  z-index: 1;
+}
+
+.about-header {
+  position: relative;
+  border-top: #fff 1px solid;
+  padding-top: 103px;
+  max-width: 100%;
+  height: 110vh;
+  z-index: -1;
+}
+
+.about-header img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  position: relative;
+  max-width: 100%;
+  margin-top: -5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 126.7vh;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.text-content {
+  font-weight: bold;
+  padding: 55px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.img-content {
+  width: 834px;
+  height: 501px;
+}
+
+.img-content img {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.story-container {
+  position: relative;
+  display: flex;
+  margin-top: -3vh;
+  background-color: #ffde59;
+  padding: 50px;
+  max-width: 100%;
+  height: 20vh;
+}
+
+.story-title {
+  margin-right: 20px;
+  width: 140%;
+  font-size: 48px;
+}
+
+.story-text {
+  max-width: 95%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.story-title .story-text {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.visi-misi-container {
+  position: relative;
+  display: flex;
+  margin-top: -3vh;
+  padding: 50px;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.card_1_image {
+  position: relative;
+  margin-top: 20px;
+  width: 489px;
+  height: 605px;
+}
+
+.card_1_image img {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.container_card_2_3 {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card_2_visi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 463px;
+  height: 223px;
+}
+
+.top_card_visi {
+  height: 52px;
+  width: 296px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.top_card_visi p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content_card_visi {
+  background-color: #ffbf23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #000;
+  border-radius: 30px;
+  height: 147px;
+  width: 463px;
+}
+
+.content_card_visi p {
+  max-width: 396px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+
+.card_3_misi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 726px;
+  height: 353px;
+  margin-top: 20px;
+}
+
+.top_card_misi {
+  height: 52px;
+  width: 296px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.top_card_misi p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content_card_misi {
+  background-color: #ffd7ef;
+  border: 5px solid #000;
+  border-radius: 30px;
+  height: 260px;
+  width: 726px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.content_card_misi ul li {
+  text-align: left;
+  font-weight: 600;
+  max-width: 650px;
+  color: #000;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary, #00c2cb);
+  padding: 24px 32px;
+  margin-top: 128px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-social-media {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: var(--secondary, #ffbf23);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.footer-social-media:hover {
+  transform: translateY(-4px);
+}
+
+.footer-social-media img {
+  width: 100%;
+}
