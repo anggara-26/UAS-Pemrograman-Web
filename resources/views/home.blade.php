@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home — Writeen</title>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+      <a href="/">
+        <img src="img/logo.png" alt="logo" class="top-navbar-logo" />
+      </a>
+      <ul class="top-navbar-link-container">
+        <li><a href="/" class="link-active">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="pricing">Pricing Plans</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="home-header">
+      <h1 class="home-header-title">
+        <div class="blue-circle-1"></div>
+        <div class="blue-circle-2"></div>
+        <div class="yellow-circle-1"></div>
+        <div class="yellow-circle-2"></div>
+        Semua Orang Bisa Jago Nulis<br />Dengan Media Yang tepat.
+      </h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Why Us -->
+      <div class="whyus">
+        <img src="img/graphic_1.png" alt="graphic" />
+        <div class="whyus-content">
+          <h2 class="whyus-title">Why Us?</h2>
+          <p class="whyus-desc">
+            You must start learning to write with Writeen now. Embark on this
+            exciting journey of words today!
+          </p>
+          <ul class="whyus-list-container">
+            <li class="whyus-list-item">
+              <img src="img/icons/Frame.png" alt="icon" />
+              <p>Creative Learning</p>
+            </li>
+            <li class="whyus-list-item">
+              <img src="img/icons/Group.png" alt="icon" />
+              <p>Easy To Use Modul</p>
+            </li>
+            <li class="whyus-list-item">
+              <img src="img/icons/Frame-1.png" alt="icon" />
+              <p>Inkubator Hasil Karya</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Our Selling -->
+      <div class="ourselling">
+        <h2 class="ourselling-title">
+          Meningkatkan peluang karier<br />dengan Kelas Intermediate.
+        </h2>
+        <p class="ourselling-desc">
+          Kelas Intermediate di Writeen dirancang untukmu yang ingin
+          mengembangkan kemampuan menulismu untuk menunjang karir profesional.
+          Kelas ini akan mengajarkanmu teknik menulis profesional, seperti
+          copywriting, content writing, dan essay writing.
+        </p>
+        <div class="ourselling-card-container">
+          <div class="ourselling-card">
+            <img
+              src="img/selling_1.jpg"
+              alt="selling image"
+              class="ourselling-card-image"
+            />
+            <h3 class="ourselling-card-title">
+              Cara Cerdas Menulis Script Konten
+            </h3>
+            <p class="ourselling-card-desc">
+              Zaman konten kreator untuk bersinar sangat besar, tapi kamu masih
+              bingung cara nulis script untuk membuat konten yang berkualitas?
+              Series ini untuk kamu!
+            </p>
+          </div>
+          <div class="ourselling-card">
+            <img
+              src="img/selling_2.jpg"
+              alt="selling image"
+              class="ourselling-card-image"
+            />
+            <h3 class="ourselling-card-title">
+              Cara Cerdas Menulis Script Konten
+            </h3>
+            <p class="ourselling-card-desc">
+              Zaman konten kreator untuk bersinar sangat besar, tapi kamu masih
+              bingung cara nulis script untuk membuat konten yang berkualitas?
+              Series ini untuk kamu!
+            </p>
+          </div>
+          <div class="ourselling-card">
+            <img
+              src="img/selling_3.jpg"
+              alt="selling image"
+              class="ourselling-card-image"
+            />
+            <h3 class="ourselling-card-title">
+              Cara Cerdas Menulis Script Konten
+            </h3>
+            <p class="ourselling-card-desc">
+              Zaman konten kreator untuk bersinar sangat besar, tapi kamu masih
+              bingung cara nulis script untuk membuat konten yang berkualitas?
+              Series ini untuk kamu!
+            </p>
+          </div>
+          <div class="ourselling-card">
+            <img
+              src="img/selling_4.jpg"
+              alt="selling image"
+              class="ourselling-card-image"
+            />
+            <h3 class="ourselling-card-title">
+              Cara Cerdas Menulis Script Konten
+            </h3>
+            <p class="ourselling-card-desc">
+              Zaman konten kreator untuk bersinar sangat besar, tapi kamu masih
+              bingung cara nulis script untuk membuat konten yang berkualitas?
+              Series ini untuk kamu!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Mentor -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="ourmentor-wave"
+      >
+        <path
+          fill="#00C2CB"
+          fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,74.7C384,64,480,64,576,101.3C672,139,768,213,864,213.3C960,213,1056,139,1152,106.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="ourmentor">
+        <h2 class="ourmentor-title">
+          Mulai Perjalanan Professional Kamu<br />Bersama Tutor Expert!
+        </h2>
+        <p class="ourmentor-desc">
+          Sudah belajar dari Basic tapi masih perlu bimbingan advanced? Don't
+          Worry, Zenteen! Writeen sudah bekerjasama dengan tutor expert
+          dibidangnya yang dapat membantu meningkatkan karir professional kamu
+          meningkat!
+        </p>
+        <div class="ourmentor-banner-container">
+          <img
+            src="img/ourmentor_1.png"
+            alt="banner our mentor"
+            class="ourmentor-banner ourmentor-banner-front"
+          />
+          <img
+            src="img/ourmentor_2.png"
+            alt="banner our mentor"
+            class="ourmentor-banner ourmentor-banner-right"
+          />
+          <img
+            src="img/ourmentor_3.png"
+            alt="banner our mentor"
+            class="ourmentor-banner ourmentor-banner-bottom"
+          />
+          <img
+            src="img/ourmentor_4.png"
+            alt="banner our mentor"
+            class="ourmentor-banner ourmentor-banner-left"
+          />
+        </div>
+      </div>
+
+      <!-- Testimoni -->
+      <div class="testimoni">
+        <h2 class="testimoni-title">Kata Mereka Tentang Writeen?</h2>
+        <div class="testimoni-card-container">
+          <div class="testimoni-card">
+            <div class="testimoni-card-header">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <p class="testimoni-card-desc">
+              "Websitenya bagus bangettt, gampang diakses, tampilannya menarik,
+              dan ada kelas belajar menulis gratisnya jadi bisa belajar menyenai
+              penulisan tanpa biaya, Makasih Writeen"
+            </p>
+            <div class="testimoni-card-footer">
+              <img src="img/flower_1.svg" alt="flower illustration" />
+              <p class="testimoni-card-person">Indah Kusuma</p>
+              <p class="testimoni-card-person-position">Freelancer</p>
+            </div>
+          </div>
+          <div class="testimoni-card">
+            <div class="testimoni-card-header">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <p class="testimoni-card-desc">
+              "jujur materi belajarnya bagus banget, emang bener-bener diajarin
+              dari pondasi belajar nulis dan ada mentor yang beneran
+              berpengalaman juga buat belajar, joss banget pokoknya. sukses
+              selalu writeen"
+            </p>
+            <div class="testimoni-card-footer">
+              <img src="img/flower_2.svg" alt="flower illustration" />
+              <p class="testimoni-card-person">Istna Ainatul</p>
+              <p class="testimoni-card-person-position">Mahasiswi</p>
+            </div>
+          </div>
+          <div class="testimoni-card">
+            <div class="testimoni-card-header">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <p class="testimoni-card-desc">
+              "dari dulu emang udah nyari banget e-course yang ngajarin nulis
+              buat ngajarin jadi penulis, eh ga sengaja liat writeen dari Tiktok
+              dan tertarik buat cek websitenya dan beneran membantu banget. good
+              job writeen"
+            </p>
+            <div class="testimoni-card-footer">
+              <img src="img/flower_3.svg" alt="flower illustration" />
+              <p class="testimoni-card-person">Nadia Putri</p>
+              <p class="testimoni-card-person-position">Creator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Copyright © 2024 All Rights Reserved by Writeen Media.</p>
+      <a
+        href="https://www.instagram.com/writeen.id"
+        target="_blank"
+        class="footer-social-media"
+      >
+        <img
+          src="img/instagram_logo_circle.png"
+          alt="social media logo"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

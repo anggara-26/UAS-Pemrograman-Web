@@ -1,0 +1,232 @@
+/* Nunito Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.3s;
+  color: #080808;
+  --primary: #00c2cb;
+  --secondary: #ffbf23;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #232323;
+}
+
+/* Top Nabar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--primary, #00c2cb);
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top-navbar-logo {
+  width: 235px;
+  height: 47px;
+  margin-left: 64px;
+}
+
+.top-navbar-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 64px;
+}
+
+.top-navbar-link-container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.top-navbar-link-container a.link-active {
+  font-weight: 700;
+  border-bottom: #fff 1px solid;
+}
+
+.top-navbar-link-container a:hover {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 32px;
+  margin-top: 102px;
+  padding: 64px 0;
+  background-color: #ffec89;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.search-bar {
+  padding: 16px 12px;
+  border-radius: 8px;
+  border: rgba(0, 0, 0, 0.6) 1px solid;
+  width: 75%;
+  max-width: 400px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border: #00969e 1px solid;
+}
+
+.flower-1 {
+  position: absolute;
+  width: 114px;
+  left: 6%;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+.flower-2 {
+  position: absolute;
+  width: 109px;
+  right: 7%;
+  top: 89px;
+  opacity: 0.8;
+}
+
+.flower-3 {
+  position: absolute;
+  width: 105px;
+  left: 20%;
+  top: 50px;
+  opacity: 0.8;
+}
+
+/* FAQ Card */
+.faq {
+  margin-top: 96px;
+  padding: 0px 64px;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.faq-card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 64px;
+  margin-top: 64px;
+  padding: 0 64px;
+}
+
+.faq-card {
+  border-radius: 12px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 280px;
+  height: fit-content;
+}
+
+.faq-card-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+  background-color: var(--secondary, #ffbf23);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1px solid black;
+}
+
+.faq-card-header .dot {
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.faq-card-desc {
+  padding: 24px 12px;
+  transition: all 1000ms linear;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.faq-answer {
+  display: none;
+  transition: all 1000ms linear;
+  padding: 12px 12px;
+  background-color: #ffd7ef;
+  border-radius: 0 0 12px 12px;
+}
+
+.faq-card.active .faq-answer {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary, #00c2cb);
+  padding: 24px 32px;
+  margin-top: 128px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-social-media {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: var(--secondary, #ffbf23);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.footer-social-media:hover {
+  transform: translateY(-4px);
+}
+
+.footer-social-media img {
+  width: 100%;
+}
