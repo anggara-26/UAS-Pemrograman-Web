@@ -1,0 +1,97 @@
+/* Nunito Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+/* Top Nabar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #00c2cb;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.top-navbar-logo {
+  width: 235px;
+  height: 47px;
+  margin-left: 64px;
+}
+
+.top-navbar-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 64px;
+}
+
+.top-navbar-link-container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.top-navbar-link-container a.link-active {
+  font-weight: 700;
+  border-bottom: #fff 1px solid;
+}
+
+.top-navbar-link-container a:hover {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+}
+
+/* Admin */
+.admin-container {
+  margin-top: 102px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary, #00c2cb);
+  padding: 24px 32px;
+  margin-top: 128px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-social-media {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: var(--secondary, #ffbf23);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.footer-social-media:hover {
+  transform: translateY(-4px);
+}
+
+.footer-social-media img {
+  width: 100%;
+}

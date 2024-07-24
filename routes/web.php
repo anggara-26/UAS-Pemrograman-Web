@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,11 @@ Route::get('/pricing', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+
+Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+
+Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+
+Route::get('/dashboard', [CustomAuthController::class, 'dashboard'])->middleware('isLoggedIn')->name('dashboard');
+
+Route::post('/logout', [CustomAuthController::class, 'logout'])->name('logout');
