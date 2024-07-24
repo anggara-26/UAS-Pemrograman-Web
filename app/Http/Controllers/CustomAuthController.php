@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\FAQ;
 use Hash;
 use Session;
 
@@ -17,7 +18,6 @@ class CustomAuthController extends Controller
         return "Registration";
     }
     public function registerUser(Request $request) {
-
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email_register;
@@ -51,12 +51,13 @@ class CustomAuthController extends Controller
         if (Session::has('loginId')) {
             $data = User::where('id', '=', Session::get('loginId'))->first();
         }
+        $data['faqs'] = FAQ::all();
         return view('dashboard', compact('data'));
     }
     public function logout() {
         if (Session::has('loginId')) {
             Session::pull('loginId');
-            return redirect('home');
+            return redirect('/');
         }
     }
 }

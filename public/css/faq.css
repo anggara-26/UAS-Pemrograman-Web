@@ -31,49 +31,6 @@ p {
   color: #232323;
 }
 
-/* Top Nabar */
-.top-navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: var(--primary, #00c2cb);
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 0px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.top-navbar-logo {
-  width: 235px;
-  height: 47px;
-  margin-left: 64px;
-}
-
-.top-navbar-link-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  margin-right: 64px;
-}
-
-.top-navbar-link-container a {
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 12px;
-}
-
-.top-navbar-link-container a.link-active {
-  font-weight: 700;
-  border-bottom: #fff 1px solid;
-}
-
-.top-navbar-link-container a:hover {
-  color: #fff;
-  border-bottom: #fff 1px solid;
-}
-
 /* Header */
 .header-container {
   display: flex;
@@ -82,7 +39,7 @@ p {
   align-items: center;
   position: relative;
   gap: 32px;
-  margin-top: 102px;
+  /* margin-top: 102px; */
   padding: 64px 0;
   background-color: #ffec89;
 }
@@ -145,6 +102,7 @@ p {
 
 .faq-card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 64px;
   margin-top: 64px;
@@ -156,6 +114,8 @@ p {
   border: 1px solid black;
   width: 100%;
   max-width: 280px;
+  flex: 1 1 calc(33% - 20px); 
+  box-sizing: border-box;
   height: fit-content;
 }
 
@@ -165,6 +125,7 @@ p {
   align-items: center;
   padding: 8px 12px;
   gap: 8px;
+  max-width: 280px;
   background-color: var(--secondary, #ffbf23);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -179,15 +140,50 @@ p {
 }
 
 .faq-card-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 12px;
   padding: 24px 12px;
   transition: all 1000ms linear;
+  border: none;
   font-size: 16px;
   font-weight: 600;
+}
+
+#editable-question, #editable-answer {
+  width: 16rem;
+  word-wrap: break-word; 
+  overflow: hidden; 
+  overflow-y: auto; 
+}
+
+#save {
+  border: none;
+  background: none;
+  display: none;
+  margin-left: 11rem;
+  cursor: pointer;
+  width: 5rem;
+  margin-top: 10px;
+}
+
+#save img {
+  width: 4rem;
 }
 
 .faq-answer {
   display: none;
   transition: all 1000ms linear;
+  max-width: 280px;
+  padding: 12px 12px;
+  background-color: #ffd7ef;
+  border-radius: 0 0 12px 12px;
+}
+
+.faq-answer-admin {
+  transition: all 1000ms linear;
+  max-width: 280px;
   padding: 12px 12px;
   background-color: #ffd7ef;
   border-radius: 0 0 12px 12px;
@@ -197,9 +193,56 @@ p {
   display: block;
 }
 
+#delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+#delete:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+#edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+#edit:hover {
+  color: #00cb00;
+  transition: 0.3s;
+}
+
+.add-btn {
+  margin-top: 7rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 15rem;
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+
+.add-btn img{
+  height: 10rem;
+  cursor: pointer;
+}
+
+.add-btn:hover{
+  margin-top: 6.5rem;
+  transition: 0.3s;
+}
+
 /* Footer */
 .footer {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary, #00c2cb);

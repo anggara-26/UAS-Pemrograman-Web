@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthCheck
+class AlreadyLoggedIn
 {
     /**
      * Handle an incoming request.
@@ -15,9 +15,6 @@ class AuthCheck
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!Session()->has('loginId')) {
-            return redirect('/')->with('fail', 'You must be logged in');
-        }
         return $next($request);
     }
 }
